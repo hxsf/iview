@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - "6"
 script:
+  - ls -al /opt/google/chrome/chrome-sandbox
   - chown -R root:root /opt/google/chrome/chrome-sandbox
   - chmod -R 4775 /opt/google/chrome/chrome-sandbox
   - npm run test
